@@ -30,11 +30,11 @@ class _EpicLoginPageState extends State<EpicLoginPage> {
           // 1. DYNAMIC BACKGROUND
           AnimatedContainer(
             duration: const Duration(seconds:4) ,
-            curve: Curves.easeInOut,
+            curve: Curves.bounceInOut,
             decoration: BoxDecoration(
               gradient: LinearGradient(
-                begin: _isExpanded ? Alignment.topLeft : Alignment.bottomRight,
-                end: _isExpanded ? Alignment.bottomRight : Alignment.topLeft,
+                begin: _isExpanded ? Alignment.topLeft : Alignment.bottomLeft,
+                end: _isExpanded ? Alignment.bottomRight : Alignment.topRight,
                 colors: const [Color(0xFF6A11CB), Color(0xFF2575FC)],
               ),
             ),
